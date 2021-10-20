@@ -1,0 +1,54 @@
+//============================================ABOUT============================================//
+//==========================================MAIN==========================================////--ABOUT MARDI GRAS--//
+//--PAGE CONTAINER--//
+.about-page {
+    background-color: $blackColor;
+    background-image: url('../../images/pexels-hitesh-choudhary-1144283.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+//--ABOUT CONTAINER--//
+.about-container {
+    background-color: rgba(153, 66, 211, 0.596);
+    margin: 5vw;
+}
+
+//--ABOUT MARDI GRAS MAIN TITLE--//
+.about-main-title {
+    text-align: center;
+    font-family: $fontHennyPenny;
+    color: $yellowColor;
+    font-size: 5vw;
+    padding: 5vw 2vw 0vw 2vw;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-shadow: 4px 1px 4px black;
+}
+
+//--ABOUT SUB-TITLE--//
+.about-title {
+    font-family: $fontHennyPenny;
+    color: $yellowColor;
+    font-size: 3vw;
+    padding: 4vw 2vw 0vw 2vw;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-shadow: 4px 1px 4px black;
+}
+
+//--ABOUT TEXT--//
+.about-text {
+    color: $blackColor;
+    font-size: 2vw;
+    font-family: $fontRoboto;
+    padding: 2vw;
+}
+
+//==MAYOR IMAGE STYLING==//
+.mayor-img {
+    height: 25%;
+    width: 25%;
+    padding: 2vw;
+}

@@ -1,0 +1,24 @@
+//==============================================FOOTER==============================================//
+//==FOOTER CONTAINER==//
+.footer-container {
+    background-color: $blackColor;
+
+    //--SOCIAL MEDIA--//
+
+    .footer-social-media-link {
+        color: $purpleColor;
+        font-size: 3vw;
+        padding: 1vw;
+
+        &:hover {
+            color: $greenColor;
+        }
+    }
+
+    //--COPYRIGHT--//
+    .copyright {
+        text-align: center;
+        color: $purpleColor;
+        font-size: 1.5vw;
+    }
+}

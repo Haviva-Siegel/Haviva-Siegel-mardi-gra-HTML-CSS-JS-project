@@ -1,0 +1,111 @@
+//============================================CONTACT============================================//
+//==========================================MAIN==========================================//
+//--MAIN CONTAINER--//
+.contact-container {
+    background-image: url('../../images/contact-backgroun-image.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+//--CONTACT CONTAINER--//
+.form-container {
+    background-color: rgba(153, 66, 211, 0.623);
+    margin: 9vw 0vw 37vw 0vw;
+}
+
+//--CONTACT TITLE--//
+.contact-title-container {
+    .contact-title {
+        font-family: $fontHennyPenny;
+        text-align: center;
+        font-size: 7vw;
+        color: $yellowColor;
+        padding-top: 6vh;
+        letter-spacing: 3px;
+        word-spacing: 10px;
+        text-shadow: 4px 1px 4px black;
+    }
+
+    //--CONTACT SUB-TITLE--//
+    .contact-sub-title {
+        font-family: $fontHennyPenny;
+        text-align: center;
+        font-size: 3vw;
+        color: $greenColor;
+        letter-spacing: 0.4VW;
+        text-shadow: 3px 1px 3px black;
+    }
+}
+
+//--CONTACT FORM--//
+//--CONTACT LABLE--//
+.contact-group {
+    color: $yellowColor;
+    font-family: $fontPattaya;
+    letter-spacing: 0.4VW;
+    font-size: 3vw;
+    padding: 1vw;
+}
+
+//--CONTACT INPUT--//
+.contact-input {
+    font-size: 2vw !important;
+    font-family: $fontRoboto;
+}
+
+//--CONTACT INPUT INVALID--//
+.invalid {
+    border: 2px solid red !important;
+}
+
+//--ERROR HINT--//
+.error-message {
+    color: red;
+    letter-spacing: 0.3VW;
+    font-family: $fontRoboto;
+}
+
+.hidden {
+    display: none;
+}
+
+//--CONTACT SUBMIT BUTTON--//
+.contact-button {
+    border: 2px solid transparent;
+    background-color: $yellowColor;
+    color: $purpleColor;
+    font-family: $fontPattaya;
+    word-spacing: 1VW;
+    cursor: pointer;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: 3vw;
+    line-height: 1.5;
+    border-radius: .25rem;
+    margin:1vw;
+    width: 30vw;
+    transition: all 0.5s;
+
+    &:hover {
+        background-color: $greenColor;
+    }
+}
+
+//==THANK YOU MESSAGE FOR CORRECTLY FULL FORM==//
+.full-form-msg {
+    background-color: rgba(153, 66, 211, 0.556);
+    margin: 5vw 5vw 0vw 5vw;
+    padding: 4vw;
+    font-family: $fontHennyPenny;
+    text-align: center;
+    font-size: 7vw;
+    color: $yellowColor;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-shadow: 4px 1px 4px black;
+}

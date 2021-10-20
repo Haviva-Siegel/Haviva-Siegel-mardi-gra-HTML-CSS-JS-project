@@ -1,0 +1,63 @@
+//============================================FAQ============================================//
+//==========================================MAIN==========================================//
+//--QUESTIONS AND ANSWERS INNER CONTAINER--//
+.faq-container {
+    background-color: #000000;
+    margin: 0vw;
+}
+
+//--QUESTIONS AND ANSWERS TITLE--//
+.faq-title {
+    color: $yellowColor;
+    font-family: $fontHennyPenny;
+    font-size: 6vw;
+    padding-top: 6vh;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-shadow: 4px 1px 4px black;
+    text-align: center;
+}
+
+//--QUESTIONS STYLE--//
+.question {
+    background-color: transparent;
+    color: $yellowColor;
+    font-family: $fontRoboto;
+    cursor: pointer;
+    padding: 5vh;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+
+    .arrow-active {
+        width: 2vw;
+        height: 2vw;
+        border: 0.5vh solid;
+        border-color: transparent transparent $yellowColor $yellowColor;
+        transform: rotate(-45deg);
+    }
+}
+
+//--QUESTIONS STYLE ON CLICK--//
+.active,
+.question:active {
+    .arrow-active {
+        width: 2vw;
+        height: 2vw;
+        border: 0.5vh solid;
+        border-color: $yellowColor $yellowColor transparent transparent;
+        transform: rotate(-45deg);
+    }
+}
+
+//--ANSWERS STYLE--//
+.answer {
+    padding: 0 18px;
+    display: none;
+    background-color: transparent;
+    color: $yellowColor;
+    font-family: $fontRoboto;
+
+}

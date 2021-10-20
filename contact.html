@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./scss/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Contact</title>
+</head>
+
+<body class="contact-container">
+    <!--==============================================HEADDER==============================================-->
+    <header>
+        <!--HEADDER NAVIGATION-->
+        <nav class="navbar navbar-expand-md headder-nav justify-content-between">
+            <!--HEADDER TAVIGATION TITLE-->
+            <a class="headder-nav-title text-decoration-none" href="./index.html">Mardi Gra</a>
+            <!--HEADDER TAVIGATION TOGGLE-->
+            <button class="col-1 navbar-toggler collapsed headder-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#navbarHeadderList" aria-controls="navbarHeadderList" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i></span>
+            </button>
+            <!--HEADDER TAVIGATION LIST COLLAPSE -->
+            <div class="navbar-collapse collapse col-12 col-md-9 col-lg-9 pr-0 justify-content-between headder-nav-is-collaps"
+                id="navbarHeadderList">
+                <ul class="navbar-nav col-12 col-md-8 col-lg-8 col-xl-8 justify-content-between headder-nav-list">
+                    <li class="col-12 col-md-2 nav-item  headder-nav-item">
+                        <a class="headder-nav-link" href="./index.html">HOME</a>
+                    </li>
+                    <li class="col-12 col-md-2 nav-item headder-nav-item">
+                        <a class="headder-nav-link" href="./about.html">ABOUT</a>
+                    </li>
+                    <li class="col-12 col-md-2 nav-item headder-nav-item">
+                        <a class="headder-nav-link" href="./media.html">MEDIA</a>
+                    </li>
+                    <li class="col-12 col-md-2 nav-item headder-nav-item">
+                        <a class="headder-nav-link" href="./faq.html">FAQ</a>
+                    </li>
+                    <li class="col-12 col-md-2 nav-item headder-nav-item">
+                        <a class="headder-nav-link" href="./contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <!--HEADDER TAVIGATION SEARCH-->
+                <form class="col-12 col-md-3 col-lg-3 col-xl-3 px-md-0 headder-nav-search">
+                    <input class="form-control headder-nav-search-input" type="search" placeholder="SEARCH"
+                        id="site-search" aria-label="Search">
+                    <button class="headder-nav-search-button" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!--END HEADDER NAVIGATION-->
+    <!--==============================================MAIN==============================================-->
+    <main>
+        <!--CONTACT CONTAINER-->
+        <div class="container form-container">
+            <!--CONTACT TITLE-->
+            <div class="contact-title-container">
+                <div class="contact-title">Contact Us</div>
+                <div class="contact-sub-title"> We wold love too hear from you! <br>
+                    Pleas ask any question in the form
+                    below:</div>
+            </div>
+            <!--CONTACT FORM-->
+            <form class="d-flex flex-column justify-content-center">
+                <!--CONTACT FIRST NAME-->
+                <div class="form-group contact-group contact-Fname">
+                    <label for="fname" class="contact-lable d-none d-md-flex">First Name</label>
+                    <input type="text" class="form-control contact-input" id="fname"
+                        placeholder="Enter your first name">
+                    <div class="error-message hidden">Your first name is required.</div>
+                </div>
+                <!--CONTACT LAST NAME-->
+                <div class="form-group contact-group contact-Lname">
+                    <label for="lname" class="contact-lable d-none d-md-flex">Last Name</label>
+                    <input type="text" class="form-control contact-input" id="lname"
+                     placeholder="Enter your last name">
+                    <div class="error-message hidden">Your last name is required.</div>
+                </div>
+                <!--CONTACT EMAIL-->
+                <div class="form-group contact-group contact-Email">
+                    <label for="email" class="contact-lable d-none d-md-flex">Email address</label>
+                    <input type="email" class="form-control contact-input" id="email"
+                        placeholder="Enter your Email address">
+                    <div class="error-message hidden">A valid Email is required.</div>
+                </div>
+                <!--CONTACT SUJECT TEXTEXTRA-->
+                <div class="form-group contact-group contact-subject">
+                    <label for="subject" class="contact-lable d-none d-md-flex">Subject</label>
+                    <textarea class="form-control contact-input" id="subject"
+                        placeholder="What would you like to write us about?"></textarea>
+                    <div class="error-message hidden">You must enter a message to contact us.</div>
+                </div>
+                <!--CONTACT SUBMIT BUTTON-->
+                <button type="submit" class="contact-button" id="contact-button">CONTACT US</button>
+            </form>
+        </div>
+        <div class="full-form-msg hidden">Thank you for contacting us! <br>
+            Hope to see you in New Orlins on Mardi Gra!
+        </div>
+        <!--END CONTACT CONTAINER-->
+    </main>
+
+    <!--==============================================FOOTER==============================================-->
+    <!--FOOTER CONTAINER-->
+    <footer class="container-fluid footer-container">
+        <!--SOCIAL MEDIA-->
+        <ul class="nav justify-content-center footer-social-media-nav">
+            <!--FACEBOOK-->
+            <li class="footer-social-media-itm facebook-itm">
+                <a class="nav-link footer-social-media-link facebook-link"
+                    href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <!--TWITTER-->
+            <li class="footer-social-media-itm twitter-itm">
+                <a class="nav-link footer-social-media-link twitter-link" href="https://twitter.com/MardiGrasNOLA"
+                    target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <!--INSTAGRAM-->
+            <li class="footer-social-media-itm instagram-itm">
+                <a class="nav-link footer-social-media-link instagram-link"
+                    href="https://www.instagram.com/mardigrasneworleans/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <!--YOUTUBE-->
+            <li class="footer-social-media-itm youtube-itm">
+                <a class="nav-link footer-social-media-link youtube-link"
+                    href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+            <!--TRIPADVISOR-->
+            <li class="footer-social-media-itm tripadvisor-itm">
+                <a class="nav-link footer-social-media-link tripadvisor-link"
+                    href="https://www.tripadvisor.com/Profile/MardiGrasNOLA" target="_blank">
+                    <i class="fab fa-tripadvisor"></i>
+                </a>
+            </li>
+        </ul>
+        <!--END SOCIAL MEDIA-->
+        <!--COPYRIGHT-->
+        <span class="row justify-content-center copyright">&copy; Made with &hearts; by XXX</span>
+        <!--END COPYRIGHT-->
+    </footer>
+</body>
+<script src="./javaScript/loader.js"></script>
+<script src="./javaScript/contact.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+</script>
+
+</html>

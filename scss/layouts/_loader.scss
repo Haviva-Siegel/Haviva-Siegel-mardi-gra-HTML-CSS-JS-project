@@ -1,0 +1,112 @@
+//==============================================PRELOADER==============================================//
+//--PRELOADER PAGE CONTAINER--//
+.loader-page {
+	background-color: $blackColor;
+	margin: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-end;
+	height: 100vh;
+	width: 100%;
+	z-index: 9999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	color: $yellowColor;
+	text-align: center;
+	text-shadow: 6px 5px 4px $purpleColor, 6px 5px 4px $greenColor;
+	font-size: 5vw;
+	font-family: $fontPattaya;
+	letter-spacing: 3px;
+	word-spacing: 10px;
+}
+
+//--PRELOADER PAGE CONTAINER--//
+.loader {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+//--PRELOADER DOTS--//
+.loader-dot {
+	width: 20vw;
+	height: 20vw;
+	border-radius: 50%;
+	transform: scale(0.2);
+	animation: bounce 1.5s 0.5s linear infinite;
+}
+
+//--PRELOADER PURPLE DOT--//
+.purple {
+	animation-name: moveThree;
+	animation-duration: 1.7s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	background: $purpleColor;
+	background-image: url('../../images/logo2021.png');
+	background-size: cover;
+}
+
+//--PRELOADER YELLOW DOT--//
+.yellow {
+	animation-name: moveTwo;
+	animation-duration: 1.6;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	background: $yellowColor;
+	background-image: url('../../images/logo2021.png');
+	background-size: cover;
+}
+
+//--PRELOADER GREEN DOT--//
+.green {
+	animation-name: moveOne;
+	animation-duration: 1.8s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-timing-function: ease-in-out;
+	background: $greenColor;
+	background-image: url('../../images/logo2021.png');
+	background-size: cover;
+}
+
+//--PRELOADER ANIMATIONS--//
+//--PRELOADER PURPLE DOT ANIMATION--//
+@keyframes moveThree {
+	from {}
+
+	to {
+		background: $yellowColor;
+		background-image: url('../../images/logo2021.png');
+		background-size: cover;
+		transform: translateX(-300px);
+	}
+}
+
+//--PRELOADER GREEN DOT ANIMATION--//
+@keyframes moveOne {
+	from {}
+
+	to {
+		background: $purpleColor;
+		background-image: url('../../images/logo2021.png');
+		background-size: cover;
+		transform: translateX(-300px)translateY(-300px);
+	}
+}
+
+//--PRELOADER YELLOW DOT ANIMATION--//
+@keyframes moveTwo {
+	from {}
+
+	to {
+		background: $greenColor;
+		background-image: url('../../images/logo2021.png');
+		background-size: cover;
+		transform: translateY(-300px);
+	}
+}

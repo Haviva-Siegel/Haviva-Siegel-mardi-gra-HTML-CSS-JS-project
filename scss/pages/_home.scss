@@ -1,0 +1,246 @@
+//============================================HOME============================================//
+//==========================================MAIN==========================================//
+//--SLIDER--//
+//--SLIDER IMAGE--//
+.slider-img {
+    height: 30vh;
+    filter: brightness(60%);
+}
+
+//--SLIDER TEXT--//
+.slider-text {
+    font-size: 4vw;
+    font-family: $fontPattaya;
+    color: $purpleColor;
+    text-shadow: 4px 1px 4px $blackColor;
+}
+
+//--SLIDER ARROW--//
+.arrow-left {
+    width: 3vw;
+    height: 3vw;
+    border: 1vw solid;
+    border-color: $purpleColor transparent transparent $purpleColor;
+    transform: rotate(-45deg);
+}
+
+.arrow-right {
+    width: 3vw;
+    height: 3vw;
+    border: 1vw solid;
+    border-color: transparent $purpleColor $purpleColor transparent;
+    transform: rotate(-45deg);
+}
+
+//--END SLIDER ARROW--//
+//--END SLIDER--//
+
+//--FUNDERS CUBE--//
+//==FUNDERS TITLE==//
+.funders-title {
+    color: $yellowColor;
+    font-family: $fontHennyPenny;
+    padding: 3vw;
+    text-align: center;
+    background-color: $blackColor;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    text-shadow: 4px 1px 3px $greenColor, 7px 4px 3px $purpleColor;
+}
+
+//==FUNDERS CONTAINER==//
+.funders-container {
+    background-color: $blackColor;
+    text-align: center;
+
+    //==ALL FUNDERS BOX ITEM==//
+    .funder-itm {
+        border: 0.2rem solid $blackColor;
+        width: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            transform: scale(1.4);
+            border: 0.2rem solid $blackColor;
+            z-index: 2;
+
+        }
+
+        //==FUNDERS ITEM INSIDE TEXT==//
+        .funder-itm-text {
+            color: $yellowColor;
+            font-family: $fontPattaya;
+            text-shadow: 4px 1px 4px black;
+            letter-spacing: 2px;
+        }
+    }
+
+    //==SEPARAITED FUNDERS BOX STYLING FOR DIFRENT BACKGROUND IMAGE==//
+    .funder-one {
+        background-image: url('../../images/sponser\ Sheraton\ New\ Orleans\ Hotel.jpg');
+
+    }
+
+    .funder-two {
+        background-image: url('../../images/sponser\ Ace\ Hotel\ New\ Orleans.jpg');
+
+    }
+
+    .funder-three {
+        background-image: url('../../images/sponser\ Haunted\ Museum.jpg');
+
+    }
+
+    .funder-four {
+        background-image: url('../../images/sponser\ Museum\ of\ Death.jpg');
+
+    }
+
+    .funder-five {
+        background-image: url('../../images/sponser\ Louisiana-Children-Museum.jpg');
+
+    }
+
+    .funder-six {
+        background-image: url('../../images/Walk-On\'s\ Bistreaux\ and\ Bar.jpg');
+
+    }
+
+    .funder-seven {
+        background-image: url('../../images/sponser\ The\ Ritz-Carlton\,\ New\ Orleans.jpg');
+
+    }
+
+    .funder-eight {
+        background-image: url('../../images/sponser\ Premium\ Parking.jpg');
+
+    }
+}
+
+//==============================================XS MOBILE==============================================//
+@media (max-width:576px) {
+
+    //--SLIDER--//
+    .slider-img {
+        height: 20vh;
+    }
+
+    //--FUNDERS CUBE--//
+    .funders-title {
+        font-size: 5.5vw;
+    }
+
+    //==ALL FUNDERS BOX ITEM==//
+    .funder-itm {
+        height: 30vh;
+
+        //==ALL FUNDERS INNER TEXT==//
+        .funder-itm-text {
+            font-size: 6vw;
+        }
+    }
+
+}
+
+//==============================================S MOBILE==============================================//
+@media (min-width:576px) and (max-width:768px) {
+
+    //--SLIDER--//
+    .slider-img {
+        height: 30vh;
+    }
+
+    //--FUNDERS CUBE--//
+    .funders-title {
+        font-size: 5.5vw;
+    }
+
+    //==ALL FUNDERS BOX ITEM==//
+    .funder-itm {
+        height: 50vh;
+
+        //==ALL FUNDERS INNER TEXT==//
+        .funder-itm-text {
+            font-size: 7vw;
+        }
+    }
+}
+
+//==============================================TABLET==============================================//
+@media (min-width:768px) and (max-width:992px) {
+
+    //--SLIDER--//
+    .slider-img {
+        height: 30vh;
+    }
+
+    //--FUNDERS CUBE--//
+    .funders-title {
+        font-size: 5.5vw;
+    }
+
+    //==ALL FUNDERS BOX ITEM==//
+    .funder-itm {
+        height: 50vh;
+
+        //==ALL FUNDERS INNER TEXT==//
+        .funder-itm-text {
+            font-size: 4vw;
+        }
+    }
+}
+
+//==============================================REGULAR COMPUTER==============================================//
+@media (min-width:992px) and (max-width:1200px) {
+
+    //--SLIDER--//
+    .slider-img {
+        height: 30vh;
+    }
+
+    //--FUNDERS CUBE--//
+    .funders-title {
+        font-size: 5.5vw;
+    }
+
+    //==ALL FUNDERS BOX ITEM==//
+    .funder-itm {
+        height: 50vh;
+
+        //==ALL FUNDERS INNER TEXT==//
+        .funder-itm-text {
+            font-size: 3vw;
+        }
+    }
+}
+
+//==============================================BIG COMPUTER==============================================//
+@media (min-width:1200px) {
+
+    //--SLIDER--//
+    .slider-img {
+        height: 40vh;
+    }
+
+    //--FUNDERS CUBE--//
+    .funders-title {
+        font-size: 5.5vw;
+    }
+
+    //==ALL FUNDERS BOX ITEM==//
+    .funder-itm {
+        height: 50vh;
+
+        //==ALL FUNDERS INNER TEXT==//
+        .funder-itm-text {
+            font-size: 3vw;
+        }
+    }
+}

@@ -1,0 +1,69 @@
+//============================================MEDIA============================================//
+//==========================================MAIN==========================================////--QUESTIONS AND ANSWERS PAGE--//
+//--MAIN MEDIA CONTAINER--//
+.media-container {
+  background-color: $blackColor;
+  transition: .2s cubic-bezier(.34, 1.12, .68, 1.31);
+}
+
+//--MEDIA CONTROLE--//
+.media-controls {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  //--MEDIA CONTROLE BUTTONS--//
+  .media-control-button {
+    height: auto;
+    width: auto;
+    background-color: $blackColor;
+    color: $purpleColor;
+    font-size: 3vw;
+    font-family: $fontPattaya;
+    letter-spacing: 1vw;
+    text-shadow: 2px 1px 2px $yellowColor;
+    line-height: 5vw;
+    margin: 2vw;
+    border-style: unset;
+    box-shadow: 3px 3px 10px $purpleColor;
+    padding: 0px;
+  }
+
+  //--MEDIA CONTROLE ACTIVE BUTTONS--//
+  .media-control-button.active {
+    background-color: $greenColor;
+    color: $yellowColor;
+    text-shadow: 2px 1px 2px $purpleColor;
+  }
+}
+
+//--IMAGE GALLERY--//
+//--IMAGE GALLERY CONTAINER--//
+.gallery-container {
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+//--GALLERY IMAGES--//
+.gallery-img-container {
+  height: auto;
+  width: auto;
+  border: 2vw solid $blackColor;
+  box-shadow: 4px 4px 10px $purpleColor;
+  list-style: none;
+  cursor: pointer;
+  margin: 1vw;
+  object-fit: cover;
+
+  &:hover {
+    transform: scale(1.2);
+    border: none;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--JQUERY AND FANCYBOX FILES -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!--CSS FILE -->
+    <link href="./scss/main.css" rel="stylesheet">
+    <!--BOOTSTRAP FILE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!--FONT AWESOME FILE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>Media</title>
+</head>
+
+<body>
+    <!--==============================================HEADDER==============================================-->
+    <header>
+        <!--HEADDER NAVIGATION-->
+        <nav class="navbar navbar-expand-md headder-nav justify-content-between">
+            <!--HEADDER TAVIGATION TITLE-->
+            <a class="headder-nav-title text-decoration-none" href="./index.html">Mardi Gra</a>
+            <!--HEADDER TAVIGATION TOGGLE-->
+            <button class="col-1 navbar-toggler collapsed headder-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#navbarHeadderList" aria-controls="navbarHeadderList" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i></span>
+            </button>
+            <!--HEADDER TAVIGATION LIST COLLAPSE -->
+            <div class="navbar-collapse collapse col-12 col-md-9 col-lg-9 pr-0 justify-content-between headder-nav-is-collaps"
+                id="navbarHeadderList">
+                <ul class="navbar-nav col-12 col-md-8 col-lg-8 col-xl-8 justify-content-between headder-nav-list">
+                    <li class="col-12 col-md-2 nav-item  headder-nav-item">
+                        <a class="headder-nav-link" href="./index.html">HOME</a>
+                    </li>
+                    <li class="col-12 col-md-2 nav-item headder-nav-item">
+                        <a class="headder-nav-link" href="./about.html">ABOUT</a>
+                    </li>
+                    <li class="col-12 col-md-2 nav-item headder-nav-item">
+                        <a class="headder-nav-link" href="./media.html">MEDIA</a>
+                    </li>
+                    <li class="col-12 col-md-2 nav-item headder-nav-item">
+                        <a class="headder-nav-link" href="./faq.html">FAQ</a>
+                    </li>
+                    <li class="col-12 col-md-2 nav-item headder-nav-item">
+                        <a class="headder-nav-link" href="./contact.html">CONTACT</a>
+                    </li>
+                </ul>
+                <!--HEADDER TAVIGATION SEARCH-->
+                <form class="col-12 col-md-3 col-lg-3 col-xl-3 px-md-0 headder-nav-search">
+                    <input class="form-control headder-nav-search-input" type="search" placeholder="SEARCH"
+                        id="site-search" aria-label="Search">
+                    <button class="headder-nav-search-button" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!--END HEADDER NAVIGATION-->
+    <!--==============================================MAIN==============================================-->
+    <!--MAIN MEDIA CONTAINER-->
+    <main class="container-fluid media-container">
+        <!--MEDIA CONTROLE-->
+        <div class="media-controls">
+            <!--MEDIA CONTROLE BUTTONS-->
+            <button class="col-3 media-control-button active" data-filter="all">ALL</button>
+            <button class="col-3 media-control-button" data-filter="image">PICTURES</button>
+            <button class="col-3 media-control-button" data-filter="video">VIDEOS</button>
+        </div>
+        <!--IMAGE GALLERY-->
+        <!--IMAGE GALLERY CONTAINER-->
+        <div class="container-fluid px-0 gallery-container">
+            <!--GALLERY IMAGES-->
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media1.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media1.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media2.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media2.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media3.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media3.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media4.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media4.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media5.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media5.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media6.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media6.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media7.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media7.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media8.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media8.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media9.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media9.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media10.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media10.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media11.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media11.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media12.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media12.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/media13.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/media13.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images"
+                    href="./images/pexels-helena-jankovičová-kováčová-5932620.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/pexels-helena-jankovičová-kováčová-5932620.jpg" alt="traditional dancing image"
+                        class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/pexels-hitesh-choudhary-1144283.jpg"
+                    data-fancybox="gallery" data-caption="Traditional dancing">
+                    <img src="./images/pexels-hitesh-choudhary-1144283.jpg" alt="traditional dancing image"
+                        class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/pexels-mali-maeder-335692.jpg"
+                    data-fancybox="gallery" data-caption="Traditional dancing">
+                    <img src="./images/pexels-mali-maeder-335692.jpg" alt="traditional dancing image"
+                        class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/samuel-dixon-eatb7lScbCc-unsplash.jpg"
+                    data-fancybox="gallery" data-caption="Traditional dancing">
+                    <img src="./images/samuel-dixon-eatb7lScbCc-unsplash.jpg" alt="traditional dancing image"
+                        class="w-100 h-100 "></a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container image">
+                <a class="lightbox" data-fancybox="images" href="./images/about-img.jpg" data-fancybox="gallery"
+                    data-caption="Traditional dancing">
+                    <img src="./images/about-img.jpg" alt="traditional dancing image" class="w-100 h-100 "></a>
+            </div>
+        </div>
+        <!--VIDEO GALLERY-->
+        <!--VIDEO GALLERY CONTAINER-->
+        <div class="container-fluid px-0 gallery-container">
+            <!--GALLERY VIDEO-->
+            <div class="col-5 col-md-3 p-0 gallery-img-container video">
+                <a data-fancybox="gallery" href="https://youtu.be/EkIZwXbSh-Y">
+                    <img class="img-fluid" src="http://i3.ytimg.com/vi/EkIZwXbSh-Y/maxresdefault.jpg" />
+                </a>
+
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container video">
+                <a data-fancybox="gallery" href="https://youtu.be/OwsyTmNB-aQ">
+                    <img class="img-fluid" src="http://i3.ytimg.com/vi/OwsyTmNB-aQ/hqdefault.jpg" />
+                </a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container video">
+                <a data-fancybox="gallery" href="https://youtu.be/gasbKeYvRw4">
+                    <img class="img-fluid" src="http://i3.ytimg.com/vi/gasbKeYvRw4/hqdefault.jpg" />
+                </a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container video">
+                <a data-fancybox="gallery" href="https://youtu.be/oiz_hFSKwVc">
+                    <img class="img-fluid" src="http://i3.ytimg.com/vi/oiz_hFSKwVc/hqdefault.jpg" />
+                </a>
+
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container video">
+                <a data-fancybox="gallery" href="https://youtu.be/VM9ODg03srU">
+                    <img class="img-fluid" src="http://i3.ytimg.com/vi/VM9ODg03srU/hqdefault.jpg" />
+                </a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container video">
+                <a data-fancybox="gallery" href="https://youtu.be/pBFSY4RM0p4">
+                    <img class="img-fluid" src="http://i3.ytimg.com/vi/pBFSY4RM0p4/maxresdefault.jpg" />
+                </a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container video">
+                <a data-fancybox="gallery" href="https://youtu.be/KlgrhGyhmG8">
+                    <img class="img-fluid" src="http://i3.ytimg.com/vi/KlgrhGyhmG8/hqdefault.jpg" />
+                </a>
+
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container video">
+                <a data-fancybox="gallery" href="https://youtu.be/PcjLTrUDF3w">
+                    <img class="img-fluid" src="http://i3.ytimg.com/vi/PcjLTrUDF3w/hqdefault.jpg" />
+                </a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container video">
+                <a data-fancybox="gallery" href="https://youtu.be/8i--vdiozL0">
+                    <img class="img-fluid" src="http://i3.ytimg.com/vi/8i--vdiozL0/hqdefault.jpg" />
+                </a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container video">
+                <a data-fancybox="gallery" href="https://youtu.be/13j5RM9jocQ">
+                    <img class="img-fluid" src="http://i3.ytimg.com/vi/13j5RM9jocQ/hqdefault.jpg" />
+                </a>
+
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container video">
+                <a data-fancybox="gallery" href="https://youtu.be/x5VJe_XIuhM">
+                    <img class="img-fluid" src="http://i3.ytimg.com/vi/x5VJe_XIuhM/hqdefault.jpg" />
+                </a>
+            </div>
+            <div class="col-5 col-md-3 p-0 gallery-img-container video">
+                <a data-fancybox="gallery" href="https://youtu.be/f38g-oyBjiE">
+                    <img class="img-fluid" src="http://i3.ytimg.com/vi/f38g-oyBjiE/hqdefault.jpg" />
+                </a>
+            </div>
+        </div>
+    </main>
+    <!--==============================================FOOTER==============================================-->
+    <!--FOOTER CONTAINER-->
+    <footer class="container-fluid footer-container">
+        <!--SOCIAL MEDIA-->
+        <ul class="nav justify-content-center footer-social-media-nav">
+            <!--FACEBOOK-->
+            <li class="footer-social-media-itm facebook-itm">
+                <a class="nav-link footer-social-media-link facebook-link"
+                    href="https://www.facebook.com/MardiGrasNewOrleans" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <!--TWITTER-->
+            <li class="footer-social-media-itm twitter-itm">
+                <a class="nav-link footer-social-media-link twitter-link" href="https://twitter.com/MardiGrasNOLA"
+                    target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <!--INSTAGRAM-->
+            <li class="footer-social-media-itm instagram-itm">
+                <a class="nav-link footer-social-media-link instagram-link"
+                    href="https://www.instagram.com/mardigrasneworleans/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <!--YOUTUBE-->
+            <li class="footer-social-media-itm youtube-itm">
+                <a class="nav-link footer-social-media-link youtube-link"
+                    href="https://www.youtube.com/channel/UCOrq1qF6dVDn9Do-wvbKh0Q" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </li>
+            <!--TRIPADVISOR-->
+            <li class="footer-social-media-itm tripadvisor-itm">
+                <a class="nav-link footer-social-media-link tripadvisor-link"
+                    href="https://www.tripadvisor.com/Profile/MardiGrasNOLA" target="_blank">
+                    <i class="fab fa-tripadvisor"></i>
+                </a>
+            </li>
+        </ul>
+        <!--END SOCIAL MEDIA-->
+        <!--COPYRIGHT-->
+        <span class="row justify-content-center copyright">&copy; Made with &hearts; by XXX</span>
+        <!--END COPYRIGHT-->
+    </footer>
+</body>
+<!--LOADER FILE-->
+<script src="./javaScript/loader.js"></script>
+<!--JQUERY AND FANCYBOX FILES -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script>
+    $('[data-fancy]').fancybox({
+        AnimationEffect: "slide"
+    })
+</script>
+<!--JQUERY AND FANCYBOX JS FILE-->
+<script src="./javaScript/media.js"></script>
+<!--BOOTSTRAP FILE-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+</script>
+
+</html>
